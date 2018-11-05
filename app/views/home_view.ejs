@@ -1,0 +1,55 @@
+<%- include('../public/html/header.ejs') %>
+
+<body>
+
+    <%- include('../public/html/left-bar.ejs') %>
+
+    <div class="main">
+        <div class="main-content">
+            <div class="user">
+                <h1 class="bold">
+                    <%=json.value[1].address.firstname %>
+                    <%=json.value[1].address.lastname %>
+                </h1>
+                <a class="light" target="_blank" href=<%-json.value[3].overview.short_url %> >
+                    Open profile at Asset Store
+                </a>
+                <div class="pos-absolute right top user-money">
+                    <%=json.value[1].name %>
+                    <p class="bold">
+                        <%=json.value[1].balance.currency %>
+                        <%=json.value[1].balance.amount_text %>
+                    </p>
+                </div>
+            </div>
+
+            <div class="divisor"></div>
+
+            <table>
+                <tr class="bold">
+                    <th>
+                        <%=json.value[2].packages[0].versions[0].name %>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <%#json.value[2].packages[0].versions[0].publishnotes %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%=json.value[2].packages[0].price %>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>
+                        <a target="_blank" href=<%-json.value[2].packages[0].short_url %>>
+                            Open at Asset Store
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <%- include('../public/html/footer.ejs') %>

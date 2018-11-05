@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Asset Store Fetcher UI</title>
+</head>
+
+<body>
+
+    <%=json.value[1].address.firstname %>
+    <%=json.value[1].address.lastname %>
+    <%=json.value[1].bio %>
+    <br>
+    <br>
+    <%=json.value[1].name %>
+    <%=json.value[1].balance.currency %>
+    <%=json.value[1].balance.amount_text %>
+    <br>
+    <br>
+    <%=json.value[2].packages[0].versions[0].name %>
+    <%=json.value[2].packages[0].versions[0].status %>
+    <%=json.value[2].packages[0].versions[0].created %>
+    <%=json.value[2].packages[0].versions[0].published %>
+    <%=json.value[2].packages[0].versions[0].modified %>
+    <%#json.value[2].packages[0].versions[0].publishnotes %>
+    <%=json.value[2].packages[0].price %>
+    <a href=<%-json.value[2].packages[0].short_url %> >Asset link</a>
+    <br>
+    <br>
+    <%=json.value[2].packages[1].versions[0].name %>
+    <%=json.value[2].packages[1].versions[0].status %>
+    <%=json.value[2].packages[1].versions[0].created %>
+    <%=json.value[2].packages[1].versions[0].published %>
+    <%=json.value[2].packages[1].versions[0].modified %>
+    <%#json.value[2].packages[1].versions[0].publishnotes %>
+    <%=json.value[2].packages[1].price %>
+    <a href=<%-json.value[2].packages[0].short_url %> >Asset link</a>
+    <br>
+    <br>
+    <img src=<%-'http://'.concat(json.value[3].overview.latest.icon.replace('//', '' )) %>>
+    <%=json.value[3].overview.latest.pubdate %>
+    <%=json.value[3].overview.latest.status %>
+    <%=json.value[3].overview.latest.kategory.name %>
+    <%=json.value[3].overview.latest.category.label %>
+    <br>
+    <br>
+    <img src=<%-'http://'.concat(json.value[3].overview.keyimage.small.replace('//', '' )) %>>
+    <img src=<%-'http://'.concat(json.value[3].overview.keyimage.big.replace('//', '' )) %>>
+    <br>
+    <br>
+    <%-json.value[3].overview.description.replace('>', '>"').replace('<', '"<') %>
+    <a href=<%-json.value[3].overview.url %> >Personal link</a>
+    <a href=<%-json.value[3].overview.short_url %> >Profile link</a>
+
+</body>
+
+</html>

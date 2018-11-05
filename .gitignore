@@ -1,0 +1,18 @@
+# NodeJs 
+node_modules/
+
+# Logs
+logs
+*.log
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+.idea
+.cloud
+.project
+tmp/
+typings/
+data/ 
+token

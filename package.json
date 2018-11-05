@@ -1,0 +1,25 @@
+{
+  "name": "asset-store-fetcher-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiodomingues/Asset-Store-Fetcher-UI.git"
+  },
+  "author": "Caio Domingues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caiodomingues/Asset-Store-Fetcher-UI/issues"
+  },
+  "homepage": "https://github.com/caiodomingues/Asset-Store-Fetcher-UI#readme",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
