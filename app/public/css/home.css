@@ -1,0 +1,53 @@
+.user {
+    width: 100%;
+}
+
+.user-money {
+    color: rgb(4, 216, 124);
+    text-align: right;
+    font-size: 18px;
+    top: 2%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    background-color: white;
+}
+
+td, th {
+    border: 1px solid rgb(226, 226, 226);
+    padding: 8px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #E91E63;
+    color: white;
+}
+
+.tablink {
+    background-color: rgb(236, 236, 236);
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    margin-right: 5%;
+}

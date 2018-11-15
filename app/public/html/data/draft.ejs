@@ -1,0 +1,26 @@
+<table class="text-center">
+    <tr class="bold">
+        <% json.largeData.draftPackages.forEach(package => { %>
+        <th>
+            <%= package.name %>
+        </th>
+        <% }) %>
+    </tr>
+    <tr>
+        <% json.largeData.draftPackages.forEach(package => { %>
+        <td>
+            <%= json.currency %>
+            <%= package.price %>
+        </td>
+        <% }) %>
+    </tr>
+    <tr>
+        <% json.largeData.draftPackages.forEach(package => { %>
+        <td>
+            <a target="_blank" href=<%- package.short_url %>>
+                Open at Asset Store
+            </a>
+        </td>
+        <% }) %>
+    </tr>
+</table>

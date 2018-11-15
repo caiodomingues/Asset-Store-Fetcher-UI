@@ -1,7 +1,8 @@
 const fs = require('fs');
 
 class HomeDAO {
-    constructor(dataPath) {
+    constructor(tokenPath, dataPath) {
+        this._tokenPath = tokenPath;
         this._dataPath = dataPath;
     }
 
@@ -11,8 +12,8 @@ class HomeDAO {
         });
     }
 
-    readJSON(file, callback) {
-        fs.readFile(`${this._dataPath}/${file}`, 'utf-8', (error, result) => {
+    readFile(file, callback) {
+        fs.readFile(file, 'utf-8', (error, result) => {
             return result ? callback(null, result) : callback(error, null);
         });
     }

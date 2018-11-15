@@ -1,11 +1,15 @@
 {
   "name": "asset-store-fetcher-ui",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.15.18",
+  "description": "A simple UI for the Asset Store Fetcher",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:server": "nodemon app.js"
+    "ui": "node app",
+    "update": "start cmd /k npm run start --prefix asset-store-fetcher",
+    "app": "npm run update && npm run ui",
+    "watch:ui": "nodemon app",
+    "watch:update": "start cmd /k npm run start-dev --prefix asset-store-fetcher",
+    "watch:app": "npm run watch:update && npm run watch:ui"
   },
   "repository": {
     "type": "git",
@@ -18,8 +22,11 @@
   },
   "homepage": "https://github.com/caiodomingues/Asset-Store-Fetcher-UI#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "consign": "^0.1.6",
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nodemon": "^1.18.6",
+    "npm": "^6.4.1"
   }
 }

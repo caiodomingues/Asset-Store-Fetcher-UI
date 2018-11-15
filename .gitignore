@@ -14,5 +14,6 @@ logs
 .project
 tmp/
 typings/
-data/ 
-token
+
+# Fetcher
+asset-store-fetcher/

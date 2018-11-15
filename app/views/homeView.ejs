@@ -1,0 +1,50 @@
+<%- include('../public/html/header.ejs') %>
+
+<div class="main">
+    <div class="main-content">
+        <div class="user">
+            <h1 class="bold">
+                <%= json.address.firstname %>
+                <%= json.address.lastname %>
+            </h1>
+            <a class="light" target="_blank" href=<%- json.overview.short_url %> >
+                Open profile at Asset Store
+            </a>
+            <div class="pos-absolute right top user-money">
+                <%= json.name %>
+                <p class="bold">
+                    <%= json.balance.currency %>
+                    <%= json.balance.amount_text %>
+                </p>
+            </div>
+        </div>
+
+        <div class="divisor"></div>
+
+        <!-- TODO: Fix buttons margins -->
+
+        <button class="tablink" onclick="openPage('Published', this)" id="defaultOpen">Published</button>
+        <button class="tablink" onclick="openPage('Deprecated', this)">Deprecated</button>
+        <button class="tablink" onclick="openPage('Draft', this)">Draft</button>
+        <button class="tablink" onclick="openPage('Declined', this)">Declined</button>
+
+        <div id="Published" class="tabcontent">
+            <%- include('../public/html/data/published.ejs')%>
+        </div>
+
+        <div id="Deprecated" class="tabcontent">
+            <%- include('../public/html/data/deprecated.ejs')%>
+        </div>
+
+        <div id="Draft" class="tabcontent">
+            <%- include('../public/html/data/draft.ejs')%>
+        </div>
+
+        <div id="Declined" class="tabcontent">
+            <%- include('../public/html/data/declined.ejs')%>
+        </div>
+
+    </div>
+</div>
+
+<%- include('../public/html/footer.ejs') %>

@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Testing: */
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+    margin-top: 1%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.light {
+    font-weight: 200;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-fixed {
+    position: fixed;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 2%;
+}
+
+.divisor {
+    margin: 5% 0%;
+}
+
+a {
+    color: rgb(0, 162, 255);
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.leftbar {
+    height: 100%;
+    padding-bottom: 100%;
+    width: 7.5%;
+    background-image: linear-gradient(#E91E63, #880E4F);
+    box-shadow: 5px -5px 10px grey;
+    overflow: hidden;
+}
+
+.leftbar-content {
+    padding: 15px 10px;
+}
+
+.main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-content {
+    margin-left: 12%;
+}
+
+footer {
+    margin-left: 0;
+    width: 50%;
+    height: 25px;
+    bottom: 2% !important;
+    word-wrap: break-word;
+    text-align: right;
+}
+
+.button {
+    padding: 5px 15px;
+    border: 2px solid #E91E63;
+    border-radius: 15px;
+    color: #E91E63;
+}
+
+.button:hover {
+    color: white;
+    background-color: #E91E63;
+}
+
+span {
+    color: rgb(156, 156, 156);
+    font-size: 12px;
+}
+
+.warn {
+    color: #E91E63;
+}
+
+select {
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-color: rgb(236, 236, 236);
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: none;
+    color: #555;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
