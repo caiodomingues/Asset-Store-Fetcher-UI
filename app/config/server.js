@@ -17,6 +17,7 @@ consign({
     .include('routes')
     .then('controllers')
     .then('models')
+    .then('utils')
     .into(app);
 
 module.exports = app;

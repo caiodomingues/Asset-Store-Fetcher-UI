@@ -67,7 +67,7 @@ a {
 .leftbar {
     height: 100%;
     padding-bottom: 100%;
-    width: 7.5%;
+    width: 5%;
     background-image: linear-gradient(#E91E63, #880E4F);
     box-shadow: 5px -5px 10px grey;
     overflow: hidden;
@@ -83,7 +83,7 @@ a {
 }
 
 .main-content {
-    margin-left: 12%;
+    margin-left: 8%;
 }
 
 footer {
@@ -116,20 +116,10 @@ span {
     color: #E91E63;
 }
 
-select {
-    -webkit-padding-end: 20px;
-    -webkit-padding-start: 2px;
-    -webkit-user-select: none;
-    background-color: rgb(236, 236, 236);
-    background-position: center right;
-    background-repeat: no-repeat;
-    border: none;
-    color: #555;
-    font-size: inherit;
-    margin: 0;
-    overflow: hidden;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.success {
+    color: rgb(4, 216, 124);
+}
+
+.note {
+    color: rgb(0, 162, 255);
 }

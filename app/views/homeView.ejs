@@ -13,15 +13,15 @@
             <div class="pos-absolute right top user-money">
                 <%= json.name %>
                 <p class="bold">
-                    <%= json.balance.currency %>
                     <%= json.balance.amount_text %>
+                    <span class="success">
+                        (<%= json.balance.currency %>)
+                    </span>
                 </p>
             </div>
         </div>
 
         <div class="divisor"></div>
-
-        <!-- TODO: Fix buttons margins -->
 
         <button class="tablink" onclick="openPage('Published', this)" id="defaultOpen">Published</button>
         <button class="tablink" onclick="openPage('Deprecated', this)">Deprecated</button>
