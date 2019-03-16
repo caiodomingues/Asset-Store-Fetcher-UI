@@ -29,6 +29,7 @@
     "npm": "^6.4.1"
   },
   "devDependencies": {
+    "eslint": "^5.9.0",
     "nodemon": "^1.18.6"
   }
 }

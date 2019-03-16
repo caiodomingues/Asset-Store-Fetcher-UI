@@ -1,13 +1,13 @@
 <table class="text-center">
     <tr class="bold">
-        <% json.largeData.declinedPackages.forEach(package => { %>
+        <% json.bigData.declinedPackages.forEach(package => { %>
         <th>
             <%= package.name %>
         </th>
         <% }) %>
     </tr>
     <tr>
-        <% json.largeData.declinedPackages.forEach(package => { %>
+        <% json.bigData.declinedPackages.forEach(package => { %>
         <td>
             <%= json.currency %>
             <%= package.price %>
@@ -15,7 +15,7 @@
         <% }) %>
     </tr>
     <tr>
-        <% json.largeData.declinedPackages.forEach(package => { %>
+        <% json.bigData.declinedPackages.forEach(package => { %>
         <td>
             <a target="_blank" href=<%- package.short_url %>>
                 Open at Asset Store

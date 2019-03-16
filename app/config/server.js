@@ -12,11 +12,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 consign({
-    cwd: 'app'
+	cwd: 'app'
 })
-    .include('routes')
-    .then('controllers')
-    .then('models')
-    .into(app);
+	.include('routes')
+	.then('controllers')
+	.then('models')
+	.then('utils')
+	.into(app);
 
 module.exports = app;

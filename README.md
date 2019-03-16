@@ -12,6 +12,7 @@ Asset-Store-Fetcher-UI
 |
 ├── app
 ├── asset-store-fetcher
+├── user
 ├── app.js
 ├── ...
 ```
