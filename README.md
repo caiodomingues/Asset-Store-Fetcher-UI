@@ -1,3 +1,7 @@
+# This project is no longer supported, if you wanna maintain it, please contact me.
+
+---
+
 # Asset Store Fetcher UI
 
 That's a Simple UI made for [Asset Store Fetcher](https://github.com/MukaSchultze/asset-store-fetcher/) by [Samuel Schultze](https://github.com/MukaSchultze/).
